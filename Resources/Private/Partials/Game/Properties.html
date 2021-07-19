@@ -1,0 +1,126 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<table class="tx-games" >
+	<tr>
+		<td>
+			<f:translate key="tx_games_domain_model_game.name" />
+		</td>
+		<td>
+		{game.name}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_games_domain_model_game.publishing_date" />
+		</td>
+		<td>
+		{game.publishingDate -> f:format.date()}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_games_domain_model_game.price" />
+		</td>
+		<td>
+		{game.price}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_games_domain_model_game.description" />
+		</td>
+		<td>
+		{game.description}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_games_domain_model_game.link_to_steam" />
+		</td>
+		<td>
+		{game.linkToSteam}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_games_domain_model_game.official_website" />
+		</td>
+		<td>
+		{game.officialWebsite}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_games_domain_model_game.artwork" />
+		</td>
+		<td>
+				<f:image src="{game.artwork.originalResource.publicUrl}" width="200"/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_games_domain_model_game.screenshots" />
+		</td>
+		<td>
+				<f:for each="{game.screenshots}" as="image" >
+					<f:image src="{image.originalResource.publicUrl}" width="200"/>
+				</f:for>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_games_domain_model_game.score" />
+		</td>
+		<td>
+		{game.score}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_games_domain_model_game.multiplayer" />
+		</td>
+		<td>
+		{game.multiplayer}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_games_domain_model_game.cpu" />
+		</td>
+		<td>
+		{game.cpu}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_games_domain_model_game.gpu" />
+		</td>
+		<td>
+		{game.gpu}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_games_domain_model_game.ram" />
+		</td>
+		<td>
+		{game.ram}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_games_domain_model_game.diskspace" />
+		</td>
+		<td>
+		{game.diskspace}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_games_domain_model_game.os" />
+		</td>
+		<td>
+		{game.os}
+		</td>
+	</tr>
+</table>
+</html>

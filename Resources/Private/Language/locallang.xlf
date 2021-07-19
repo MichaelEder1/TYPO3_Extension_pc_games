@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:games/Resources/Private/Language/locallang" date="2021-07-13T22:35:05Z" product-name="games">
+		<header/>
+		<body>
+			<trans-unit id="tx_games_domain_model_game" resname="tx_games_domain_model_game">
+				<source>Game</source>
+			</trans-unit>
+			<trans-unit id="tx_games_domain_model_game.name" resname="tx_games_domain_model_game.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_games_domain_model_game.publishing_date" resname="tx_games_domain_model_game.publishing_date">
+				<source>Publishing Date</source>
+			</trans-unit>
+			<trans-unit id="tx_games_domain_model_game.price" resname="tx_games_domain_model_game.price">
+				<source>Price</source>
+			</trans-unit>
+			<trans-unit id="tx_games_domain_model_game.description" resname="tx_games_domain_model_game.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_games_domain_model_game.link_to_steam" resname="tx_games_domain_model_game.link_to_steam">
+				<source>Link To Steam</source>
+			</trans-unit>
+			<trans-unit id="tx_games_domain_model_game.official_website" resname="tx_games_domain_model_game.official_website">
+				<source>Official Website</source>
+			</trans-unit>
+			<trans-unit id="tx_games_domain_model_game.artwork" resname="tx_games_domain_model_game.artwork">
+				<source>Artwork</source>
+			</trans-unit>
+			<trans-unit id="tx_games_domain_model_game.screenshots" resname="tx_games_domain_model_game.screenshots">
+				<source>Screenshots</source>
+			</trans-unit>
+			<trans-unit id="tx_games_domain_model_game.score" resname="tx_games_domain_model_game.score">
+				<source>Score</source>
+			</trans-unit>
+			<trans-unit id="tx_games_domain_model_game.multiplayer" resname="tx_games_domain_model_game.multiplayer">
+				<source>Multiplayer</source>
+			</trans-unit>
+			<trans-unit id="tx_games_domain_model_game.cpu" resname="tx_games_domain_model_game.cpu">
+				<source>Cpu</source>
+			</trans-unit>
+			<trans-unit id="tx_games_domain_model_game.gpu" resname="tx_games_domain_model_game.gpu">
+				<source>Gpu</source>
+			</trans-unit>
+			<trans-unit id="tx_games_domain_model_game.ram" resname="tx_games_domain_model_game.ram">
+				<source>Ram</source>
+			</trans-unit>
+			<trans-unit id="tx_games_domain_model_game.diskspace" resname="tx_games_domain_model_game.diskspace">
+				<source>Diskspace</source>
+			</trans-unit>
+			<trans-unit id="tx_games_domain_model_game.os" resname="tx_games_domain_model_game.os">
+				<source>Os</source>
+			</trans-unit>
+			<trans-unit id="tx_games_domain_model_game.genre" resname="tx_games_domain_model_game.genre">
+				<source>Genre</source>
+			</trans-unit>
+			<trans-unit id="tx_games_domain_model_game.characters" resname="tx_games_domain_model_game.characters">
+				<source>Characters</source>
+			</trans-unit>
+			<trans-unit id="tx_games_domain_model_game.publisher" resname="tx_games_domain_model_game.publisher">
+				<source>Publisher</source>
+			</trans-unit>
+			<trans-unit id="tx_games_domain_model_game.usk" resname="tx_games_domain_model_game.usk">
+				<source>Usk</source>
+			</trans-unit>
+			<trans-unit id="tx_games_domain_model_character" resname="tx_games_domain_model_character">
+				<source>Character</source>
+			</trans-unit>
+			<trans-unit id="tx_games_domain_model_character.name" resname="tx_games_domain_model_character.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_games_domain_model_character.photo" resname="tx_games_domain_model_character.photo">
+				<source>Photo</source>
+			</trans-unit>
+			<trans-unit id="tx_games_domain_model_genre" resname="tx_games_domain_model_genre">
+				<source>Genre</source>
+			</trans-unit>
+			<trans-unit id="tx_games_domain_model_genre.name" resname="tx_games_domain_model_genre.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_games_domain_model_genre.description" resname="tx_games_domain_model_genre.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_games_domain_model_publisher" resname="tx_games_domain_model_publisher">
+				<source>Publisher</source>
+			</trans-unit>
+			<trans-unit id="tx_games_domain_model_publisher.name" resname="tx_games_domain_model_publisher.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_games_domain_model_publisher.website" resname="tx_games_domain_model_publisher.website">
+				<source>Website</source>
+			</trans-unit>
+			<trans-unit id="tx_games_domain_model_publisher.logo" resname="tx_games_domain_model_publisher.logo">
+				<source>Logo</source>
+			</trans-unit>
+			<trans-unit id="tx_games_domain_model_usk" resname="tx_games_domain_model_usk">
+				<source>U S K</source>
+			</trans-unit>
+			<trans-unit id="tx_games_domain_model_usk.age" resname="tx_games_domain_model_usk.age">
+				<source>Age</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

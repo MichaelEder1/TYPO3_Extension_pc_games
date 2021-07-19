@@ -1,0 +1,56 @@
+plugin.tx_games_games {
+    view {
+        # cat=plugin.tx_games_games/file; type=string; label=Path to template root (FE)
+        templateRootPath = EXT:games/Resources/Private/Templates/
+        # cat=plugin.tx_games_games/file; type=string; label=Path to template partials (FE)
+        partialRootPath = EXT:games/Resources/Private/Partials/
+        # cat=plugin.tx_games_games/file; type=string; label=Path to template layouts (FE)
+        layoutRootPath = EXT:games/Resources/Private/Layouts/
+    }
+    persistence {
+        # cat=plugin.tx_games_games//a; type=string; label=Default storage PID
+        storagePid =
+    }
+}
+plugin.tx_games_genre {
+    view {
+        # cat=plugin.tx_games_genre/file; type=string; label=Path to template root (FE)
+        templateRootPath = EXT:games/Resources/Private/Templates/
+        # cat=plugin.tx_games_genre/file; type=string; label=Path to template partials (FE)
+        partialRootPath = EXT:games/Resources/Private/Partials/
+        # cat=plugin.tx_games_genre/file; type=string; label=Path to template layouts (FE)
+        layoutRootPath = EXT:games/Resources/Private/Layouts/
+    }
+    persistence {
+        # cat=plugin.tx_games_genre//a; type=string; label=Default storage PID
+        storagePid =
+    }
+}
+plugin.tx_games_publisher {
+    view {
+        # cat=plugin.tx_games_publisher/file; type=string; label=Path to template root (FE)
+        templateRootPath = EXT:games/Resources/Private/Templates/
+        # cat=plugin.tx_games_publisher/file; type=string; label=Path to template partials (FE)
+        partialRootPath = EXT:games/Resources/Private/Partials/
+        # cat=plugin.tx_games_publisher/file; type=string; label=Path to template layouts (FE)
+        layoutRootPath = EXT:games/Resources/Private/Layouts/
+    }
+    persistence {
+        # cat=plugin.tx_games_publisher//a; type=string; label=Default storage PID
+        storagePid =
+    }
+}
+plugin.tx_games_cheapest {
+    view {
+        # cat=plugin.tx_games_cheapest/file; type=string; label=Path to template root (FE)
+        templateRootPath = EXT:games/Resources/Private/Templates/
+        # cat=plugin.tx_games_cheapest/file; type=string; label=Path to template partials (FE)
+        partialRootPath = EXT:games/Resources/Private/Partials/
+        # cat=plugin.tx_games_cheapest/file; type=string; label=Path to template layouts (FE)
+        layoutRootPath = EXT:games/Resources/Private/Layouts/
+    }
+    persistence {
+        # cat=plugin.tx_games_cheapest//a; type=string; label=Default storage PID
+        storagePid =
+    }
+}

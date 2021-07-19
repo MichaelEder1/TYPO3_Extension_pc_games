@@ -1,0 +1,13 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default"/>
+
+<f:section name="header">
+    <h1>Alle Spiele</h1>
+</f:section>
+
+<f:section name="content">
+    <f:for each="{games}" as="game">
+        <f:render partial="ListItem" section="card" arguments="{game:game, width:'400', height=height}"/>
+    </f:for>
+</f:section>
+</html>

@@ -1,0 +1,31 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:section name="card">
+    <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+            <f:link.action action="show" pageUid="93" arguments="{game:game}" style="text-decoration:none !important;">
+                <f:render section="image" arguments="{image:game.artwork, width:width, height='200c', alt:game.name}"/>
+            </f:link.action>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">{game.name}</h5>
+                    <f:if condition="{game.description}">
+                        <p>
+                            <f:format.crop maxCharacters="250">{game.description}</f:format.crop>
+                        </p>
+                    </f:if>
+                    <f:link.action action="show" pageUid="93" arguments="{game:game}">show more</f:link.action>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+</f:section>
+
+<f:section name="image">
+    <f:if condition="{image}">
+        <div class="col-md-4">
+            <f:image image="{image}" class="img-fluid rounded-start" maxWidth="{width}" height="{height}"
+                     alt="{alt}"/>
+        </div>
+    </f:if>
+</f:section>

@@ -1,0 +1,92 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers " lang="en">
+<f:layout name="Default"/>
+<f:section name="header">
+    <div>
+        <h1 style="justify-content: center; display: flex;">{game.name}</h1>
+        <p style="justify-content: center; display: flex; margin-top: -1em;">Published:
+            <f:format.date format="%d. %B %Y">{game.publishingDate}</f:format.date>
+        </p>
+    </div>
+</f:section>
+<f:section name="content">
+    <f:if condition="{game.screenshots}">
+        <div style="display: flex; justify-content: center; margin-bottom: 1em">
+            <figure>
+                <f:render partial="ListItem" section="image"
+                          arguments="{image:game.artwork, width:'500', height=height, alt:game.name}"/>
+                <figcaption style="font-size: 0.8em; font-style: italic; display: flex; justify-content: center">
+                    {game.name}
+                </figcaption>
+            </figure>
+        </div>
+    </f:if>
+    <f:if condition="{game.screenshots}">
+        <div style="display: flex; gap: 1em; justify-content: center">
+            <f:for each="{game.screenshots}" as="screenshot">
+                <f:render partial="ListItem" section="image"
+                          arguments="{image:screenshot, width:width, height='200c', alt:game.name}"/>
+            </f:for>
+        </div>
+        <p style="display:flex;justify-content: center;">Screenshots from {game.name}</p>
+    </f:if>
+
+    <f:render section="text" arguments="{value:game.description}"/>
+    <h2>Information about {game.name}</h2>
+    <table>
+        <f:render section="table" arguments="{value:game.name, label:'Title'}"/>
+        <f:render section="table" arguments="{value:game.publisher.name, label:'Publisher'}"/>
+        <f:render section="table" arguments="{value:game.genre.name, label:'Genre'}"/>
+        <f:render section="table" arguments="{value:game.officialWebsite, label:'Website'}"/>
+        <f:render section="table" arguments="{value:game.score, label:'Score on metacritic'}"/>
+        <f:render section="table" arguments="{value:game.price, label:'Price on Steam'}"/>
+        <f:render section="table" arguments="{value:game.linkToSteam, label:'Buy on Steam'}"/>
+        <f:render section="table" arguments="{value:game.usk.age, label:'USK'}"/>
+        <f:render section="table" arguments="{value:game.multiplayer, label:'Multiplayer'}"/>
+    </table>
+
+
+    <f:if condition="{game.characters}">
+        <h2>Characters in {game.name}</h2>
+        <div style="display: flex; gap: 1em; justify-content: center">
+            <f:for each="{game.characters}" as="characters">
+                <f:if condition="{characters.photo}">
+                    <figure>
+                        <f:render partial="ListItem" section="image"
+                                  arguments="{image:characters.photo, width:width, height='200c', alt:game.name}"/>
+                        <f:if condition="{characters.name}">
+                            <figcaption style="display: flex; justify-content: center;">{characters.name}</figcaption>
+                        </f:if>
+                    </figure>
+                </f:if>
+            </f:for>
+        </div>
+    </f:if>
+
+
+    <h2>Minimal Requirements</h2>
+    <table>
+        <f:render section="table" arguments="{value:game.os, label:'Operating System'}"/>
+        <f:render section="table" arguments="{value:game.cpu, label:'CPU'}"/>
+        <f:render section="table" arguments="{value:game.gpu, label:'GPU'}"/>
+        <f:render section="table" arguments="{value:game.ram, label:'RAM (in GB)'}"/>
+        <f:render section="table" arguments="{value:game.diskspace, label:'Storage (in GB)'}"/>
+    </table>
+</f:section>
+
+<f:section name="table">
+    <f:if condition="{value}">
+        <tr>
+            <th>{label}</th>
+            <td>{value}</td>
+        </tr>
+    </f:if>
+</f:section>
+
+<f:section name="text">
+    <f:if condition="{value}">
+        <p>{value}</p>
+    </f:if>
+</f:section>
+</html>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:games/Resources/Private/Language/locallang_csh" date="2021-07-13T22:35:05Z" product-name="games">
+		<header/>
+		<body>
+			<trans-unit id="name.description" resname="name.description">
+				<source>name</source>
+			</trans-unit>
+			<trans-unit id="publishing_date.description" resname="publishing_date.description">
+				<source>publishingDate</source>
+			</trans-unit>
+			<trans-unit id="price.description" resname="price.description">
+				<source>price</source>
+			</trans-unit>
+			<trans-unit id="description.description" resname="description.description">
+				<source>description</source>
+			</trans-unit>
+			<trans-unit id="link_to_steam.description" resname="link_to_steam.description">
+				<source>linkToSteam</source>
+			</trans-unit>
+			<trans-unit id="official_website.description" resname="official_website.description">
+				<source>officialWebsite</source>
+			</trans-unit>
+			<trans-unit id="artwork.description" resname="artwork.description">
+				<source>artwork</source>
+			</trans-unit>
+			<trans-unit id="screenshots.description" resname="screenshots.description">
+				<source>screenshots</source>
+			</trans-unit>
+			<trans-unit id="score.description" resname="score.description">
+				<source>score</source>
+			</trans-unit>
+			<trans-unit id="multiplayer.description" resname="multiplayer.description">
+				<source>multiplayer</source>
+			</trans-unit>
+			<trans-unit id="cpu.description" resname="cpu.description">
+				<source>cpu</source>
+			</trans-unit>
+			<trans-unit id="gpu.description" resname="gpu.description">
+				<source>gpu</source>
+			</trans-unit>
+			<trans-unit id="ram.description" resname="ram.description">
+				<source>ram</source>
+			</trans-unit>
+			<trans-unit id="diskspace.description" resname="diskspace.description">
+				<source>diskspace</source>
+			</trans-unit>
+			<trans-unit id="os.description" resname="os.description">
+				<source>os</source>
+			</trans-unit>
+			<trans-unit id="genre.description" resname="genre.description">
+				<source>genre</source>
+			</trans-unit>
+			<trans-unit id="characters.description" resname="characters.description">
+				<source>characters</source>
+			</trans-unit>
+			<trans-unit id="publisher.description" resname="publisher.description">
+				<source>publisher</source>
+			</trans-unit>
+			<trans-unit id="usk.description" resname="usk.description">
+				<source>usk</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
